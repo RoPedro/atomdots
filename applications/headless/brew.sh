@@ -8,13 +8,21 @@ brew_pkgs=(
     "coreutils"
     "ripgrep"
     "docker"
+    "docker-engine"
+    "docker-buildx"
     "fastfetch"
     "stow"
     "mise"
     "fzf"
     "fd"
+    "zoxide"
+    "slirp4netns" # For rootless docker
+    "rootlesskit" # For rootless docker
+    "gh"          #Github CLI
 
     # Shell tools
+    "fish"
+    "starship"
     "zsh"
     "zsh-theme-powerlevel10k-git"
     "zsh-syntax-highlighting"
@@ -28,3 +36,7 @@ brew_pkgs=(
     "lazygit"
     "lazydocker"
 
+    # AI
+    "opencode"
+    "akitaonrails/tap/ai-memory"
+)
