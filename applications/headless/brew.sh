@@ -1,7 +1,7 @@
 brew_pkgs=(
     # Common tools
     "tree-sitter"
-    "tldr"
+    "tlrc"
     "ncdu"
     "bat"
     "eza"
@@ -22,7 +22,7 @@ brew_pkgs=(
     "zsh-completions"
 
     # TUI's
-    "tmux"
+    "tpack"
     "btop"
     "neovim"
     "lazygit"
