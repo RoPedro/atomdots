@@ -2,13 +2,10 @@ install_packages() {
     # Install packages with error handling
     echo "Installing Homebrew pkgs pkgs..."
     for package in "${brew_pkgs[@]}"; do
-        yay -S --noconfirm $package || {
+        NONINTERACTIVE=1 $BREW_PATH/bin/brew install $package || {
             echo "Failed to install $package, skipping..."
         }
     done
-
-    echo "Installed pkgs: ${headless_pkgs[*]}"
-    echo "Finished installing terminal packages."
 
     if [ -n "$WAYLAND_DISPLAY" ]; then
         echo "Installing desktop pkgs..."
