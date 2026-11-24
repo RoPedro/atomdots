@@ -23,11 +23,6 @@ brew_pkgs=(
     # Shell tools
     "fish"
     "starship"
-    "zsh"
-    "zsh-theme-powerlevel10k-git"
-    "zsh-syntax-highlighting"
-    "zsh-autosuggestions"
-    "zsh-completions"
 
     # TUI's
     "tpack"
